@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">VoiceHealth Guide</string>
+    <string name="welcome">WELCOME</string>
+    <string name="email_id">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="sign_up_text">Don\'t have an account?</string>
+    <string name="line">OR</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="username">Username</string>
+    <string name="register_text">Join us before?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="name_required_error">Nama tidak boleh kosong.</string>
+    <string name="invalid_email_error">Alamat email tidak valid.</string>
+    <string name="invalid_password_error">Kata sandi harus memiliki minimal 8 karakter.</string>
+    <string name="email_required">Email tidak boleh kosong</string>
+    <string name="password_required">Password tidak boleh kosong</string>
+    <string name="invalid_input_error">Input tidak valid</string>
+    <string name="login_succes_dialog">Anda berhasil login. Sudah tidak sabar untuk belajar ya?</string>
+
 </resources>
