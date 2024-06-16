@@ -8,20 +8,18 @@ import android.os.Bundle
 import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
-import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.core.widget.addTextChangedListener
 import com.aloysius.dicoding.data.pref.UserModel
 import com.aloysius.dicoding.view.customview.EmailEditText
 import com.aloysius.dicoding.view.customview.PasswordEditText
-import com.aloysius.voicehealthguide.MainActivity
+import com.aloysius.voicehealthguide.view.main.MainActivity
 import com.aloysius.voicehealthguide.R
 import com.aloysius.voicehealthguide.databinding.ActivityLoginBinding
 import com.aloysius.voicehealthguide.view.ViewModelFactory
+import com.aloysius.voicehealthguide.view.register.RegisterActivity
 
 class LoginActivity : AppCompatActivity() {
     private val viewModel by viewModels<LoginViewModel> {
@@ -43,7 +41,9 @@ class LoginActivity : AppCompatActivity() {
         setupView()
         setupAction()
         setupObserver()
+        navigateToRegister()
         playAnimation()
+
     }
 
     private fun setupView() {
@@ -126,6 +126,13 @@ class LoginActivity : AppCompatActivity() {
             }
             create()
             show()
+        }
+    }
+    private fun navigateToRegister(){
+        binding.signUpNav.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 

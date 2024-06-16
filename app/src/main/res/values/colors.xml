@@ -26,7 +26,7 @@
     <color name="coral">#FF7F50</color>
     <color name="hot_pink">#FF69B4</color>
     <color name="tomato">#FF6347</color>
-    <color name="orange_red">#FF4500</color>
+    <color name="orange_red">#EB4335</color>
     <color name="deep_pink">#FF1493</color>
     <color name="fuchsia">#FF00FF</color>
     <color name="magenta">#FF00FF</color>
@@ -112,7 +112,7 @@
     <color name="dark_olive_green">#556B2F</color>
     <color name="indigo">#4B0082</color>
     <color name="medium_turquoise">#48D1CC</color>
-    <color name="dark_slate_blue">#483D8B</color>
+    <color name="dark_slate_blue">#112E3C</color>
     <color name="steel_blue">#4682B4</color>
     <color name="royal_blue">#4169E1</color>
     <color name="turquoise">#40E0D0</color>
@@ -142,4 +142,6 @@
     <color name="black">#000000</color>
     <color name="gray_hex">#F1F6F7</color>
     <color name="graham_gray">#6B6C70</color>
+    <color name="false_bar">#0E303A</color>
+    <color name="true_bar">#07AAEB</color>
 </resources>

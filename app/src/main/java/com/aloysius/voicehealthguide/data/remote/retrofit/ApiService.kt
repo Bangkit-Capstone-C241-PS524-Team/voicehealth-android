@@ -1,9 +1,10 @@
 package com.aloysius.voicehealthguide.data.remote.retrofit
 
 import com.aloysius.voicehealthguide.data.remote.response.LoginResponse
+import com.aloysius.voicehealthguide.data.remote.response.RegisterResponse
+import com.aloysius.voicehealthguide.data.remote.response.NewsResponse
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
-import retrofit2.Response
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.GET
@@ -14,13 +15,14 @@ import retrofit2.http.Query
 
 
 interface ApiService {
-//    @FormUrlEncoded
-//    @POST("register")
-//    suspend fun register(
-//        @Field("name") name: String,
-//        @Field("email") email: String,
-//        @Field("password") password: String
-//    ): RegisterResponse
+    @FormUrlEncoded
+    @POST("auth/register")
+    suspend fun register(
+        @Field("username") username: String,
+        @Field("name") name: String,
+        @Field("email") email: String,
+        @Field("password") password: String
+    ): RegisterResponse
 
     @FormUrlEncoded
     @POST("auth/login")
@@ -29,11 +31,8 @@ interface ApiService {
         @Field("password") password: String
     ): LoginResponse
 
-    @GET("stories")
-    suspend fun getStories(
-        @Query("page") page: Int = 1,
-        @Query("size") size: Int = 20
-    )
+    @GET("news")
+    suspend fun getNews(): NewsResponse
 
     @GET("stories")
     suspend fun getStoriesWithLocation(

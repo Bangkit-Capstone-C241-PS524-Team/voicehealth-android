@@ -15,7 +15,7 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        buildConfigField("String", "BASE_URL", "\"https://voicehealth-backend-lnk4vu7nua-et.a.run.app/api/\"")
+        buildConfigField("String", "BASE_URL", "\"https://primeval-gear-426113-v6.et.r.appspot.com/api/\"")
     }
 
     buildTypes {
@@ -63,5 +63,6 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.androidx.activity.ktx)
+    implementation(libs.androidx.paging.runtime.ktx)
 
 }
